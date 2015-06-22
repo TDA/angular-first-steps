@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ordinary.</title>
+<style>
+html{
+	font-size:16px;
+}
+span{
+	display:inline-block;
+}
+.anim1{
+	position:absolute;
+	animation:hide ease 2s 1;
+	animation-delay:2s;
+	animation-fill-mode:forwards;
+}
+.anim2{
+	position:relative;
+	opacity:0;
+	animation:show ease 2s 1;
+	animation-delay:2s;
+	animation-fill-mode:forwards;
+}
+p{
+	position: relative;
+	font-size:1.25em;
+}
+
+@keyframes hide{
+	to{
+		opacity:0;
+	}
+	}
+@keyframes show{
+	to{
+		opacity:1;
+	}
+	}
+	
+
+</style>
+</head>
+
+<body>
+
+<p>I am <span class="anim1">only</span><span class="anim2">Extra</span> Ordinary</p>
+<p>I am <span class="name">Sai Pc</span></p>
+</body>
+</html>
